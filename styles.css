@@ -1,21 +1,24 @@
-body {
-    background-color:  #36384D;
+.container {
+    background-color: #36384D;
     font-family: 'Roboto', sans-serif;
-    display: flex; /* Create a flex container for the body */
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    margin: 0; /* Remove default margin to center properly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set the height to 100% of the viewport height */
+    margin: 0;
+    /* Remove default margin to center properly */
 }
 
 
-.card{
+.card {
     width: 870px;
     height: 580px;
     background-color: white;
     border-radius: 40px;
     padding: 25px;
     display: flex;
+    flex-direction: row;
 }
 
 .card .card-left {
@@ -26,10 +29,10 @@ body {
     margin-right: 25px;
 }
 
-.card .card-right{
+.card .card-right {
     background-color: blanchedalmond;
     width: 50%;
-    height:auto;
+    height: auto;
     margin-left: 25px;
     border-radius: 20px;
     background-image: url(/assets/images/illustration-sign-up-desktop.svg);
@@ -50,13 +53,17 @@ body {
     width: 100%;
 }
 
+.card-left button:hover {
+    background-color: #FF5F58;
+}
+
 .card-left input {
     background-color: white;
     border-radius: 4px;
-    border:1px solid hsl(231, 7%, 60%);
+    border: 1px solid hsl(231, 7%, 60%);
     color: hsl(231, 7%, 60%);
-    padding: 15px 32px; 
-    text-align:start;
+    padding: 15px 32px;
+    text-align: start;
     text-decoration: none;
     display: block;
     font-size: 16px;
@@ -80,16 +87,16 @@ p .intro {
 
 .list-container {
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     margin: 40px 0;
 }
 
-.list-container p{
+.list-container p {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
-.list-container p img{
+.list-container p img {
     margin-right: 20px;
 }
 
@@ -108,11 +115,11 @@ p .intro {
 }
 
 .error {
-    border:1px solid red;
+    border: 1px solid red;
 }
 
 
-#success{
+#success {
     display: none;
     position: fixed;
     top: 50%;
@@ -147,11 +154,64 @@ p .intro {
 
 #success button:hover {
     background-color: #FF5F58;
-} 
+}
 
 #success p {
     font-size: 13px;
 }
 
+/* Your existing CSS styles for larger screens */
 
+@media (max-width: 500px) {
+    /* Media query for narrower mobile screens (e.g., iPhone SE) */
 
+    .container {
+        background-color: white;
+        margin: 0;
+    } 
+
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 ;
+        margin: 0; 
+    }
+
+    .card .card-left {
+        width: 90%;
+    }
+
+    .card .card-right {
+
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+        background-size: cover;
+    }
+
+    .card-left button {
+        background-color: #232742;
+        border-radius: 4px;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin: 4px 2px 25px 2px;
+        cursor: pointer;
+        width: 100%;
+    }
+   
+
+  
+
+ 
+
+   
+
+}
