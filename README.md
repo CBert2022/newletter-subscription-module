@@ -31,4 +31,12 @@ Finished desktop view & will add mobil soon.
 
  ![Bildschirm­foto 2023-10-19 um 11 17 36 (2)](https://github.com/CBert2022/newletter-subscription-module/assets/110911202/83465169-1634-4743-96a8-0a54fab77d46)
 
+ ### Mobil
 
+ ![Bildschirm­foto 2023-10-19 um 16 48 50](https://github.com/CBert2022/newletter-subscription-module/assets/110911202/f518fa95-c4ba-413f-a32e-c9f076206cbf)
+
+
+  
+
+
+ 
