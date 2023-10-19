@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     background-color: #36384D;
     font-family: 'Roboto', sans-serif;
@@ -5,9 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Set the height to 100% of the viewport height */
     margin: 0;
-    /* Remove default margin to center properly */
 }
 
 
@@ -34,7 +37,8 @@
     width: 50%;
     height: auto;
     margin-left: 25px;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-image: url(/assets/images/illustration-sign-up-desktop.svg);
 }
 
@@ -160,10 +164,9 @@ p .intro {
     font-size: 13px;
 }
 
-/* Your existing CSS styles for larger screens */
 
 @media (max-width: 500px) {
-    /* Media query for narrower mobile screens (e.g., iPhone SE) */
+
 
     .container {
         background-color: white;
