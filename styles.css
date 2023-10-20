@@ -209,6 +209,11 @@ p .intro {
         cursor: pointer;
         width: 100%;
     }
+
+    #success button{
+        margin-top: 60%;
+       
+    }
    
 
   
