@@ -33,12 +33,10 @@ body {
 }
 
 .card .card-right {
-    background-color: blanchedalmond;
     width: 50%;
     height: auto;
     margin-left: 25px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     background-image: url(https://cbert2022.github.io/newletter-subscription-module/assets/images/illustration-sign-up-desktop.svg);
 }
 
@@ -191,7 +189,11 @@ p .intro {
         width: 100%;
         height: 400px;
         margin: 0;
-        background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: url(https://cbert2022.github.io/newletter-subscription-module/assets/images/illustration-sign-up-mobile.svg);
         background-size: cover;
     }
 
