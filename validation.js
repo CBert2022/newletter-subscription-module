@@ -3,6 +3,9 @@ function checkEmail() {
     let errMess = document.getElementById('errMessage')
     let card = document.getElementById("card")
     let success = document.getElementById("success")
+    let span = document.getElementById("input-name"); 
+    let emailValue = email.value;
+    span.textContent = emailValue; 
 
     let filter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!filter.test(email.value)) {
